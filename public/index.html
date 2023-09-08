@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <header>
+        <!--Nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="#" class="logo">Carrito de Compras</a>
+            <!--Icono Carrito -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <!--carrito-->
+            <div class="cart">
+                <h2 class="cart-title">Tu carrito</h2>
+                <!--contenido-->
+                <div class="cart-content">
+                </div>
+                <!--total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Q0</div>
+                </div>
+                <!--boton de comprar-->
+                <button type="button" class="btn-buy">Pagar Ahora</button>
+                <!--Cerrar Carrito-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!--Productos-->
+    <section class="shop container">
+        <h2 class="section-title">Productos de la Tienda</h2>
+        <!--Contenido de la tienda-->
+        <div class="shop-content">
+            <!--Caja 1-->
+            <div class="product-box">
+                <!--Stripe necesita imágenes que están en línea, en el servidor local no se mostrará en la página de pago tenemos que subirlos en línea-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUnhtPnDx7eRY8mPZREhXJWuSkyJwW5zJEy_86gOzS5bd-h4ni_ywJzR-8FlDE-DMlrHNJQXT9zQCVOMtgO_ayao4pMQXK3okFnEfwPTEKBZ_JvC_a-aHgSKmvQ1tX1_lW3VZ6iBG2zBroS60GV5CSeXuX_4Jn93wMkL2iUjyBDFLHLPzz9vqUzzgkxkc/s320/product1.jpeg" alt="" class="product-img">
+                <h2 class="product-title">ADICOLOR SEASONAL</h2>
+                <span class="price">Q400</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--Caja 2-->
+            <div class="product-box">
+                <!--Stripe necesita imágenes que están en línea, en el servidor local no se mostrará en la página de pago tenemos que subirlos en línea-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOiSWXJAvKljjOd5MoPFnUlWjU6X8DtsvykvLLyTM6pwCqD_aD8Fd9fk4TyKaUQBUhxjl_GbtU3hBXryzqSbRuEoURudKvKLIsmETt7VLLRoOFjdRUHPFT9bgMA8WgYr3IrMe-6Rf0y7hUJI1nvajtdGmfJpiy7o3_BsLYV3E57lmYoFlyg_ShCwXaPvg/s320/product2.jpeg" alt="" class="product-img">
+                <h2 class="product-title">SATURDAY BACKPACK</h2>
+                <span class="price">Q350</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--Caja 3-->
+            <div class="product-box">
+                <!--Stripe necesita imágenes que están en línea, en el servidor local no se mostrará en la página de pago tenemos que subirlos en línea-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5Ob25K9zc1A_Iysrw8549_JVkLMi0XV--3W2PikO6WQTGu46Uvh4gcD1U4HW_35LJX6xLZVWW0-p41lacAXdQy0uWZBa-W8qXnDaM2-l-RjRmzTB42DlKECZtejFJS7AkrwV9AMVAYaWVaI7wvOL9UQqC-NtD-Qx6iJBQVPS4Cp10WlWpa_HHOXTSikM/s320/product3.jpeg" alt="" class="product-img">
+                <h2 class="product-title">ULTIMATE HAT</h2>
+                <span class="price">Q200</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--Caja 4-->
+            <div class="product-box">
+                <!--Stripe necesita imágenes que están en línea, en el servidor local no se mostrará en la página de pago tenemos que subirlos en línea-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjA2uB6U8wQ9r1hkJth68oVFLA2TCkeC3OyDpyFINovziNxkj69lMKbMMoV-_nc_-Uh7jJaEaw4fIrJmF_Fi3dKem2ERqH50MB17s65AzmCL2C9WS9FrEPPMiLrBUdNt0T_XUo-jfqKGU4T72W9pYEbk5iYgEJH-x90K_GAkYWBaD_Pzy9_3uLrSS0OgGs/s320/product4.jpeg" alt="" class="product-img">
+                <h2 class="product-title">MESSI GOAT TEE</h2>
+                <span class="price">Q199.99</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--Caja 5-->
+            <div class="product-box">
+                <!--Stripe necesita imágenes que están en línea, en el servidor local no se mostrará en la página de pago tenemos que subirlos en línea-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghq7Ib4ELcdwahn0j1fUX05LPzgqHzsj1MD7RYNr4OJ6Vm8YJSsGr9UfSgLIwGPEc1DRl3fa4Y3_Tum-3FXNijQP9Y1X-yRgta8orp5r0dCMwpm7fgeXOfPejN3d1sWWu6-0izt3LUJ6cT94cImyGWQ7rYYDBjEGRRrY6KdbKWYTdWqB0VXVrJOsgZOvE/s320/product5.jpeg" alt="" class="product-img">
+                <h2 class="product-title">ADICOLOR HOODIE</h2>
+                <span class="price">Q400</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--Caja 6-->
+            <div class="product-box">
+                <!--Stripe necesita imágenes que están en línea, en el servidor local no se mostrará en la página de pago tenemos que subirlos en línea-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqtOnOmNufVl031jxgRy0g1r8_LrEUb4VX_zBAcUYiu_dAWwxKU56i6wcUHkt9uRd0ThyaGIKwnUXHvfGe_9eEsrgnJCVJ9Mf7F_1hHKNhC2LQev6TFUI-ufAPOgKqRWRWe1KTTT-g5XV86SNLroK0n9SMqyYnf65UbYJ4Wq72qBR8FXRnbQq8xFbAHrI/s320/product6.jpeg" alt="" class="product-img">
+                <h2 class="product-title">ADIDAS EARBUDS </h2>
+                <span class="price">Q99.99</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--Caja 7-->
+            <div class="product-box">
+                <!--Stripe necesita imágenes que están en línea, en el servidor local no se mostrará en la página de pago tenemos que subirlos en línea-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKYNLBq1TXhdPDzG5ZpckbOh6YR2SdfckrMlSpiF_h3CdXf_vFLCMl3de4kLvUDkW7sDdees-t7e5e22KDumh36YunCAEcv2YQeyr2CZMCcoXjAjdOH6IRRkOfA0RCpLLKYVJ2ds-edNnjqSePNNECYgX1E13Xized5OCQh38jgJ76cGKlGjNyashjDyc/s320/product7.jpeg" alt="" class="product-img">
+                <h2 class="product-title">METAL BOTTLE 1L</h2>
+                <span class="price">Q9.99</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--Caja 8-->
+            <div class="product-box">
+                <!--Stripe necesita imágenes que están en línea, en el servidor local no se mostrará en la página de pago tenemos que subirlos en línea-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT2o8ehRfMynxY1KiuurJpQV2fqdchzSid_puyv9odw0Ai3yZZaJzDln-E0htIEk4eXt1gteb8ODLM7qHzmrCCCYDXYAM0H9F8i-8kTi8nuCw_txfhRTPVbdhYUXqHf1wa_3Ibw5L51ONejNFPGxg7pDQWTrTnQC63aQfsX0955RZHn218OfcdSf2EPL0/s320/product8.jpeg" alt="" class="product-img">
+                <h2 class="product-title">ULTRABOOST SHOES</h2>
+                <span class="price">Q1000</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+        </div>
+    </section>
+    <!--link a js-->
+    <script src="/public/js/main.js"></script>
+</body>
+</html>
