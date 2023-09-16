@@ -193,3 +193,5 @@ function clearCart() {
     updatetotal();
     localStorage.removeItem("cartItems");
 }
+
+//Login
